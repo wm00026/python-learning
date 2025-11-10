@@ -10,11 +10,10 @@ It utilizes the following important concepts:
 Author: wm00026
 """
 
-def print_hello_world(count, number_str):
-    if count != 0:
-        print("Error: count must be zero")
-        return
+def print_hello_world(number_str):
 
+    count = 0
+    
     if not number_str.isdigit():
         print("Error: The input should be a number.")
         return
@@ -35,5 +34,5 @@ def print_hello_world(count, number_str):
 #================================================
 
 number_input = input("Type in a number: ")
-print_hello_world(0, number_input)
+print_hello_world(number_input)
 
