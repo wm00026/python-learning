@@ -10,7 +10,17 @@ It utilizes the following important concepts:
 Author: wm00026
 """
 
-def print_hello_world(number_str):
+"""
+function print_hello_world:
+@brief: Prints "Hello, World!" x number of times based on user input.
+@param count: Integer - should be initialized to 0, used to count the number of times "Hello, World!" is printed.
+@param number_str: String - user input that should represent a number.
+@return: None
+"""
+def print_hello_world(count, number_str):
+    if count != 0:
+        print("Error: count must be zero")
+        return
 
     count = 0
     
@@ -31,8 +41,10 @@ def print_hello_world(number_str):
     final_count = count
 
     print("Hello World was printed", final_count , "times!")
-#================================================
+#=================================== end of function defintion =================================
 
+
+#main function 
 number_input = input("Type in a number: ")
 print_hello_world(number_input)
 
